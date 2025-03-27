@@ -23,7 +23,7 @@ struct tvm_prog {
 };
 
 /* Create and initialize an empty program object */
-struct tvm_prog *tvm_prog_create();
+struct tvm_prog *tvm_prog_create(void);
 
 void tvm_prog_destroy(struct tvm_prog *p);
 

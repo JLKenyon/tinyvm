@@ -16,7 +16,7 @@ struct tvm_ctx {
 	struct tvm_mem *mem;
 };
 
-struct tvm_ctx *tvm_vm_create();
+struct tvm_ctx *tvm_vm_create(void);
 void tvm_vm_destroy(struct tvm_ctx *vm);
 
 int tvm_vm_interpret(struct tvm_ctx *vm, char *filename);

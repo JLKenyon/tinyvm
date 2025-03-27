@@ -5,7 +5,7 @@
 #include <tvm/tvm_parser.h>
 #include <tvm/tvm.h>
 
-struct tvm_prog *tvm_prog_create()
+struct tvm_prog *tvm_prog_create(void)
 {
 	struct tvm_prog *p = calloc(1, sizeof(struct tvm_prog));
 

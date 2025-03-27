@@ -11,7 +11,7 @@ struct tvm_lexer_ctx {
 	char ***tokens;
 };
 
-struct tvm_lexer_ctx *lexer_create();
+struct tvm_lexer_ctx *lexer_create(void);
 void tvm_lexer_destroy(struct tvm_lexer_ctx *l);
 
 /* Tokenize the character array "source" into lines and tokens */

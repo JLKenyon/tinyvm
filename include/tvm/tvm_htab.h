@@ -17,7 +17,7 @@ struct tvm_htab_ctx {
 	struct tvm_htab_node **nodes;
 };
 
-struct tvm_htab_ctx *tvm_htab_create();
+struct tvm_htab_ctx *tvm_htab_create(void);
 void tvm_htab_destroy(struct tvm_htab_ctx *htab);
 
 int tvm_htab_add(struct tvm_htab_ctx *htab, const char *key, int value);

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct tvm_lexer_ctx *lexer_create()
+struct tvm_lexer_ctx *lexer_create(void)
 {
 	return (struct tvm_lexer_ctx *)calloc(1, sizeof(struct tvm_lexer_ctx));
 }

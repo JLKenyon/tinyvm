@@ -5,7 +5,7 @@
 
 #define HTAB_LOAD_FACTOR 0.7
 
-struct tvm_htab_ctx  *tvm_htab_create()
+struct tvm_htab_ctx  *tvm_htab_create(void)
 {
 	struct tvm_htab_ctx *htab =
 		(struct tvm_htab_ctx *)calloc(1, sizeof(struct tvm_htab_ctx));
